@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			表格
+		</title>
+	</head>
+	<body>
+		<!-- 
+			table 		表格
+			caption 	表格 标题
+			th 			表格 表头
+			tr 			表格 行
+			td 			表格 单元
+			thead 		表格 页眉
+			tbody 		表格 主体
+			tfoot 		表格 页脚
+			col 		表格 列的属性
+			colgroup  	表格 列的组
+			colspan		表格 列个数
+			rowspan		表格 行个数
+			&nbsp;		表格 站位
+
+			ul 			无序列表
+			ol 			有序列表
+			li 			列表项
+			dl 			定义列表
+			dt 			定义项目
+			dd 			定义的描述
+		 -->
+
+		 <!-- 
+		 	<table frame="box">
+			frame="box"
+			-----------------
+			|Month	Savings	|
+			|January	$100|
+			-----------------
+			
+			frame="above"
+			-----------------
+			Month	Savings	
+			January	$100
+
+			frame="below"
+			Month	Savings	
+			January	$100
+			-----------------
+			
+			frame="hsides"
+			-----------------
+			Month	Savings	
+			January	$100
+			-----------------
+
+			frame="vsides"
+			|Month	Savings	|
+			|January	$100|
+		
+
+		  -->
+		 <h1>一列</h1>
+		 <table 
+		 border="1" 
+		 background="/Users/mac/Desktop/MF/HTML/pic/pic-html5.jpeg"
+		  width="300"
+		   height="300"
+		   cellpadding="20">
+		 	<tr>
+		 		<td>1000000000000000</td>
+		 	</tr>
+		 </table>
+
+		 <h1>一行三列</h1>
+		 <table border="1" bgcolor="red" cellspacing="10"> 
+		 	<tr>
+		 		<td>100</td>
+		 		<td>200</td>
+		 		<td>300</td>
+		 	</tr>
+		 </table>
+
+		  <h1>二行三列</h1>
+		 <table border="1"> 
+		 	<caption>我是标题</caption>
+		 	<tr>
+		 		<td>100</td>
+		 		<td>200</td>
+		 		<td>300</td>
+		 	</tr>
+		 	<tr>
+		 		<!-- 空表格占位符 -->
+		 		<td>&nbsp;</td>
+		 		<td>5008888</td>
+		 		<td>6009999999</td>
+		 	</tr>
+		 </table>
+
+		 <h1>横跨两列的单元格</h1>
+		 <table border="1">
+		 	<tr>
+		 		<th>姓名</th>
+		 		<th colspan="2">电话</th>
+		 	</tr>
+		 	<tr>
+		 		<td>小王6</td>
+		 		<td>8983 8888</td>
+		 		<td>9900 2222</td>
+		 	</tr>
+		 </table>
+
+
+		 <h1>横跨三行的单元格</h1>
+		 <table border="1">
+		 	<tr>
+		 		<th>姓名</th>
+		 		<td>王小5</td>
+		 		<td>&nbsp;</td>
+		 	</tr>
+		 	<tr>
+		 		<th rowspan="3">电话</th>
+		 		<td>7777 0000</td>
+		 		<td>&nbsp;</td>
+		 	</tr>
+		 	<tr>
+		 		<td>6666 0000</td>
+		 		<td>5555 0000</td>
+		 	</tr>
+		 	<tr>
+		 		<td>4444 0000</td>
+		 		<td>3333 0000</td>
+		 	</tr>
+		 </table>
+
+
+		 <h1>表格内的标签</h1>
+		 <table border="1">
+		 	<tr>
+		 		<td>
+		 			<h1>112345</h1>
+		 			<p>hhhhhhhhh</p>
+			 	</td>
+			 	<td>
+			 		<table border="2">
+			 			<tr>
+						    <td>A</td>
+						    <td>B</td>
+					    </tr>
+					    <tr>
+					  	    <td>C</td>
+					     	<td>D</td>
+					    </tr>
+			 		</table>
+			 	</td>
+		 	</tr>
+		 		<td>
+		 			<!-- 无序列表 类型type默认是黑色实体小圆点（disc），也定义其他：type="square" -->
+		 			<ul type="circle">
+		 				<li>桃子</li>
+		 				<li>苹果</li>
+		 				<li>葡萄</li>
+		 			</ul>
+		 			<!-- 有序列表 类型type默认是数字，也定义其他：type="B"-->
+		 			<ol start="55">
+		 				<li>红色</li>
+		 				<li>绿色</li>
+		 				<li>蓝色</li>
+		 			</ol>
+		 			<ol type="A">
+		 				<li>红色</li>
+		 				<li>绿色</li>
+		 				<li>蓝色</li>
+		 			</ol>
+			 	</td>
+			 	<td>
+			 		哈哈😀
+			 	</td>
+		 	</tr>
+		 </table>
+
+
+		 <h1>定义列表</h1>
+		 <dl>
+		 	<dt>电脑系统</dt>
+		 	<dd>Mac、Linux、Unix、Windows</dd>
+		 </dl>
+
+	</body>
+</html>
