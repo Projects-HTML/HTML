@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="keywords" content="HTML, CSS, XML" />
 		<meta charset="utf-8">
 		<title>响应式HTML</title>
 		<style type="text/css">
@@ -14,6 +15,16 @@
 			}
 		</style>
 	</head>
+
+	<!-- 
+		head 	关于文档的信息
+		title 	文档标题
+		base 	页面所以链接的默认地址\目标
+		link 	文档与外部资源之间的关系
+		meta 	HTML文档的元数据
+		script 	客户端脚本
+		style 	文档样式
+	 -->
 	
 	<!-- <body>
 		<div class="city">
@@ -49,6 +60,76 @@
 	 height="500"
 	 frameborder="0">
 	 	
-	 </iframe>
+	</iframe>
 
+	<!--
+		action 				 提交动作，如果省略 action 属性，则 action 会被设置为当前页面。
+		accept-charset 		 被提交表单中使用的字符集（UTF-8等）
+		autocomplete 		 规定浏览器应自动完成表单（默认 开启）
+		enctype				 被提交数据的编码（默认 url-encoded）
+		method 				 在提交表单时所用的 HTTP 方法（默认：GET）
+		name 				 规定识别表单的名称
+		novalidate 			 规定浏览器不验证表单
+		target 				 action属性中地址的目标（默认_self）
+		value				 属性规定输入字段的初始值：
+		readonly			 只读 readonly 属性不需要值。它等同于 readonly="readonly"
+		disabled			 输入字段是禁用的。被禁用的元素是不可用和不可点击的。
+		被禁用的元素不会被提交。属性不需要值。它等同于disabled="disabled"
+		size 				属性规定输入字段的尺寸（以字符计）
+
+		<fieldset> 元素组合表单中的相关数据
+		<legend> 元素为 <fieldset> 元素定义标题。
+	 -->
+	<form action="action_page.php" method="POST">
+		<input type="radio" name="option" value="male" checked>Male
+		<input type="radio" name="option" value="female">Female
+		<br/>
+		<input type="checkbox" name="aaa" value="Aaaa" checked>我选A
+		<input type="checkbox" name="aaa" value="Bbbb" checked>我选B
+		<br/>
+		<fieldset>
+			<legend>Personal information:</legend>
+			<input type="text" name="username" value="UserName" readonly>
+			<br/>
+			<input type="password" name="password" value="PassWord">
+			<br/>
+		<input type="submit" value="Submit">
+		</fieldset>
+		
+		<br/>
+	</form>
+
+
+	<form>
+		<select name="cars">
+			<option value="volvo">Volvo</option>
+			<option value="audi">Fiat</option>
+			<option value="audi">Audi</option>
+			<option value="honda">Honda</option>
+			<option value="toyota">Toyota</option>
+		</select>
+	</form>
+
+	<!-- 多行文字输入框 -->
+	<textarea name="message" rows="10" cols="30">
+		The cat was playing in the garden.The cat was playing in the garden.The cat was playing in the garden.The cat was playing in the garden.The cat was playing in the garden.
+	</textarea>
+
+	<br/>
+	<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+	<!-- 输入提示 Safari 或 IE9（以及更早的版本）不支持 datalist 标签。 -->
+	<form action="action_page.php">
+		<input list="browsers">
+		<datalist id="browsers">
+		   <option value="Internet Explorer">
+		   <option value="Firefox">
+		   <option value="Chrome">
+		   <option value="Opera">
+		   <option value="Safari">
+		</datalist> 
+	</form>
 </html>
+
+
+
